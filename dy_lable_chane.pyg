@@ -1,0 +1,18 @@
+#Dyanamic label text change and Dynamic tkinter screen size setting
+from tkinter import *
+
+t=Tk()
+
+t.title("Cobination on three widget")
+s=StringVar()#dynamic variable for change value
+def change():#it implement on button click
+    t.geometry(e.get())#take arg as(250x250)when you give other value it can't work.
+    
+
+b=Button(t,text="Click ",command=change)
+b.pack()
+e=Entry(t,textvariable=s)
+e.pack()
+l=Label(t,textvariable=s,text="Hello Visiter Enter your text in Entry lable")
+l.pack()
+t.mainloop()
